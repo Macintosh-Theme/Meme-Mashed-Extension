@@ -2,7 +2,7 @@
 	"name": "meme-mashed-extension",
 	"displayName": "Meme Mashed Extension",
 	"description": "",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"engines": {
 		"vscode": "^1.68.0"
 	},
