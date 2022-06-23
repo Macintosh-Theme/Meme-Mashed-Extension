@@ -2,7 +2,7 @@
 	"name": "meme-mashed-extension",
 	"displayName": "Meme Mashed Extension",
 	"description": "",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"engines": {
 		"vscode": "^1.68.0"
 	},
@@ -10,42 +10,39 @@
 		"Other"
 	],
 	"icon": "icon.PNG",
-    "publisher": "NNinept",
-    "keywords": [
-        "Fun",
-        "MEME",
-        "Sleep Mode"
-    ],
-    "homepage": "https://github.com/Macintosh-Theme/Meme-Mashed-Extension",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Macintosh-Theme/Meme-Mashed-Extension"
-    },
-    "license": "MIT",
+	"publisher": "NNinept",
+	"keywords": [
+		"Fun",
+		"MEME",
+		"Sleep Mode"
+	],
+	"homepage": "https://github.com/Macintosh-Theme/Meme-Mashed-Extension",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Macintosh-Theme/Meme-Mashed-Extension"
+	},
+	"license": "MIT",
 	"activationEvents": [
 		"*"
 	],
 	"main": "./extension.js",
 	"contributes": {
-		"commands": [
-
-		],
+		"commands": [],
 		"configuration": {
 			"title": "Meme Mashed Extension",
 			"properties": {
-			  "memeMashedExtension.sleepTimeout": {
-				"type": "integer",
-				"default": 100000,
-				"description": "Sleep Timeout configureation."
-			  },
-			  "memeMashedExtension.activate": {
-				"type": "boolean",
-				"default": false,
-				"description": "Activate Sleep Mode"
-			  }
+				"memeMashedExtension.sleepTimeout": {
+					"type": "integer",
+					"default": 100000,
+					"description": "Sleep Timeout configureation."
+				},
+				"memeMashedExtension.activate": {
+					"type": "boolean",
+					"default": false,
+					"description": "Activate Sleep Mode"
+				}
+			}
 		}
-		}
-		  
 	},
 	"scripts": {
 		"lint": "eslint .",
