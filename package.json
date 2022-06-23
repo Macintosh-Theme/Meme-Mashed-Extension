@@ -9,6 +9,19 @@
 	"categories": [
 		"Other"
 	],
+	"icon": "icon.PNG",
+    "publisher": "NNinept",
+    "keywords": [
+        "Fun",
+        "MEME",
+        "Sleep Mode"
+    ],
+    "homepage": "https://github.com/Macintosh-Theme/Meme-Mashed-Extension",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Macintosh-Theme/Meme-Mashed-Extension"
+    },
+    "license": "MIT",
 	"activationEvents": [
 		"*"
 	],
