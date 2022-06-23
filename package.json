@@ -16,7 +16,18 @@
 	"contributes": {
 		"commands": [
 
-		]
+		],
+		"configuration": {
+			"title": "Meme Mashed Extension",
+			"properties": {
+			  "memeMashedExtension.sleepTimeout": {
+				"type": "integer",
+				"default": 100000,
+				"description": "Sleep Timeout configureation."
+			  }
+		}
+		}
+		  
 	},
 	"scripts": {
 		"lint": "eslint .",

@@ -110,7 +110,7 @@ setTimeout(()=>{
  */
 function activate(context) {
 
-	let time = -1
+	let time = Date.now()
 	// Use the console to output diagnostic information (console.log) and errors (console.error)
 	// This line of code will only be executed once when your extension is activated
 	console.log('Congratulations, your extension "vsc-retro-plugin" is now active!');
@@ -122,8 +122,9 @@ function activate(context) {
 	vscode.workspace.onDidChangeTextDocument((e)=>{
 		time = Date.now()
 	})
+
 	setInterval(()=>{
-		if(Date.now() - time > 10000){
+		if(Date.now() - time > vscode.workspace.getConfiguration('memeMashedExtension').get("sleepTimeout")){
 			sleepMode(context)
 		}
 		console.log("test")
