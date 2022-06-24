@@ -126,8 +126,9 @@ function activate(context) {
 	if(vscode.workspace.getConfiguration('memeMashedExtension').get("activate")){
 	setInterval(()=>{
 		if(Date.now() - time > vscode.workspace.getConfiguration('memeMashedExtension').get("sleepTimeout")){
-			time = Date.now()
 			sleepMode(context)
+			time = Date.now()
+			console.log("done")
 		}
 		console.log("test")
 	},30000)}

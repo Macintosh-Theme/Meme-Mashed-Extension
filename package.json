@@ -33,7 +33,7 @@
 			"properties": {
 				"memeMashedExtension.sleepTimeout": {
 					"type": "integer",
-					"default": 100000,
+					"default": 300000,
 					"description": "Sleep Timeout configureation."
 				},
 				"memeMashedExtension.activate": {
