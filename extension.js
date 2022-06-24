@@ -18,7 +18,7 @@ function getRandomInt(min, max) {
   }
 
 function sleepMode(context){
-	player.play(path.join(context.extensionPath, 'media', '64bit.wav'),{afplay: ['-v', -1 ]},function(err){
+	player.play(path.join(context.extensionPath, 'media', '64bit.wav'),function(err){
 		if (err) throw err
 	});
 
@@ -126,11 +126,11 @@ function activate(context) {
 	if(vscode.workspace.getConfiguration('memeMashedExtension').get("activate")){
 	setInterval(()=>{
 		if(Date.now() - time > vscode.workspace.getConfiguration('memeMashedExtension').get("sleepTimeout")){
-			sleepMode(context)
 			time = Date.now()
+			sleepMode(context)
 		}
 		console.log("test")
-	},1000)}
+	},30000)}
 
 }
 
